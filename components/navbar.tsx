@@ -26,7 +26,7 @@ function Navbar({ isPro }: NavBarProp) {
   return (
     <div className="fixed w-full z-50 flex items-center justify-between py-2 px-4 border-b border-primary/10 bg-secondary h-16">
       <div className="flexx items-center">
-        <MobileSidebar />
+        <MobileSidebar isPro={isPro}/>
         <Link href="/">
           <h1
             className={cn(
